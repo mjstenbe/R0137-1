@@ -47,12 +47,12 @@ public class JuomaAutomaatti {
 	public void valmistaKahvi() {
 		
 		if (this.kahvia <= 0) {
-			System.out.println("Kahvi loppu, täytä säiliö.");
+			System.out.println("Kahvi loppu, tÃ¤ytÃ¤ sÃ¤iliÃ¶.");
 		}
 		
 		else {
 		System.out.println("Odota hetki, kahvisi valmistuu.");
-		this.kahvia-=10;
+		this.kahvia-=10; // TÃ¤mÃ¤ ratkaisu on ihan ok. Jos haluaisi hifistellÃ¤, niin kannattaisi tsekata ettÃ¤ 10 yksikÃ¶n vÃ¤hennys ei pudota arvoa negatiiviseksi
 		}
 		System.out.print(toString());
 		}
@@ -61,7 +61,7 @@ public class JuomaAutomaatti {
 	public void valmistaTee() {
 		
 		if (teeta <= 0) {
-			System.out.println("Tee loppu, täytä säiliö.");
+			System.out.println("Tee loppu, tÃ¤ytÃ¤ sÃ¤iliÃ¶.");
 		}
 		
 		else {
@@ -75,7 +75,7 @@ public class JuomaAutomaatti {
 	public void valmistaKaakao() {
 
 		if (kaakaota <= 0) {
-			System.out.println("Kaakao loppu, täytä säiliö.");
+			System.out.println("Kaakao loppu, tÃ¤ytÃ¤ sÃ¤iliÃ¶.");
 		}
 		   
 		else {
@@ -99,7 +99,7 @@ public class JuomaAutomaatti {
 
 	public String toString() {
 		
-		return "Kahvia jäljellä: " + this.kahvia + ", Teetä jäljellä: " + this.teeta + ", kaakaota jäljellä: " + this.kaakaota +"\n";
+		return "Kahvia jÃ¤ljellÃ¤: " + this.kahvia + ", TeetÃ¤ jÃ¤ljellÃ¤: " + this.teeta + ", kaakaota jÃ¤ljellÃ¤: " + this.kaakaota +"\n";
 		
 	}
 	
